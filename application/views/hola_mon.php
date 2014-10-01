@@ -70,7 +70,7 @@
 	<h1>Welcome to CodeIgniter!</h1>
 
 	<div id="body">
-		<p>Hola <?php echo $parameter1;?>!</p>
+		<p>Hola mon!</p>
 
 	</div>
 
