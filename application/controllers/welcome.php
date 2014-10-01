@@ -1,6 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
+	function __construct() {
+		parent:: __construct();
+		$this->config->load('code_igniter_hello_world')
+	}
+
 
 	/**
 	 * Index Page for this controller.
@@ -23,18 +28,19 @@ class Welcome extends CI_Controller {
 
 	}
 	
-	/*public function pepito(){
+	public function pepito(){
 		$this->load->view('hola_mon');
 	}
 
-	public function grettings($name)
+	public function grettings($name){
 		$data= array();
 		
 		$data['parameter1'] = $name;
 		$data['parameter2'] = $name;
 		$data['parameter3'] = $name;
 
-		$this->load->view('hola_mon',$data);/*/
+		$this->load->view('grettings',$data);
+	}
 }
 
 /* End of file welcome.php */
