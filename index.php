@@ -56,6 +56,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
+
 	$system_path = '/usr/share/codeigniter/system';
 
 /*

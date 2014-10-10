@@ -40,7 +40,14 @@ class Welcome extends CI_Controller {
 		//$data['name'] = $name;
 		//$data['parameter3'] = $name;
 
-		$this->load->view('grettings',$data);
+	/*public function grettings($name){
+		$data= array();
+		
+		$data['parameter1'] = $name;
+		$data['parameter2'] = $name;
+		$data['parameter3'] = $name;
+
+		$this->load->view('grettings',$data);*/
 	}
 }
 
