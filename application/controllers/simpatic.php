@@ -29,6 +29,9 @@ class Simpatic extends CI_Controller {
 	public function form()
 	{
 		$data= array();
+
+		$data['firstname']=$this->input->get_post('firstname');
+		$data['lastname']=$this->input->get_post('lastname');
 		$this->load->view('form_exemple',$data);
 		
 	}
