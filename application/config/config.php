@@ -26,7 +26,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'http://localhost/codeigniter/';
+$config['index_page'] = 'http://192.168.202.102/codeigniter/';
 
 /*
 |--------------------------------------------------------------------------

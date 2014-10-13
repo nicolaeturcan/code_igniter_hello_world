@@ -5,6 +5,7 @@ class Simpatic extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->config->load('code_igniter_hello_world');
+		$this->load->helper('url');
 	}
 
 	public function index()
@@ -13,15 +14,25 @@ class Simpatic extends CI_Controller {
 		$this->load->view('hola_mon');
 	}
 	
-	public function greetings_2(){
+	public function grettings_2(){
 		$data = array();
-		
+
+		//echo $_POST;
+		//var_export($_POST);
+		print_r($_POST);
+
 		$name = $this->input->get_post('name');
 		$data['name']= $name;
 		$this->load->view('grettings',$data);
 	}
 
-	public function grettings($name)
+	public function form()
+	{
+		$data= array();
+		$this->load->view('form_exemple',$data);
+		
+	}
+	/*public function grettings($name){
 		$data= array();
 		
 		$parameter_1 = $this->input->get('parametre1');
@@ -30,6 +41,7 @@ class Simpatic extends CI_Controller {
 	    $data['parametre2'] = $this->config->item('academic_period');
 	         
 	    $this->load->view('grettings',$data);
+	}*/
 }
 
 /* End of file welcome.php */
